@@ -1,1 +1,14 @@
-Hello World!
+---
+layout: default
+languages:
+  - ruby
+  - javascript
+  - bash
+---
+
+<h3>Languages I know:</h3>
+<ul>
+{% for language in page.languages %}
+    <li>{{language}}</li>
+{% endfor %}
+</ul>
